@@ -114,7 +114,7 @@ const app = createApp({
           if (response.data.success) {
             alert('成功!', '產品刪除成功', 'success');
             delProductModal.hide();
-            this.getData();
+            this.getProducts();
           } else {
             console.log(response.data.message);
           }
